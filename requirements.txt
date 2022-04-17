@@ -8,8 +8,7 @@ py==1.11.0
 pycodestyle==2.8.0
 pyparsing==3.0.8
 pytest==7.1.1
-# Editable Git install with no remote (todo-app-py==0.0.0)
--e /Users/jacques/Desktop/projects/todo-app-py
+-e git+https://github.com/Jacques-Philippe/todo-app-py.git@e057f840731f81944da81ae5299b2defa8453100#egg=todo_app_py
 toml==0.10.2
 tomli==2.0.1
 wcwidth==0.2.5
