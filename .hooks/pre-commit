@@ -1,0 +1,12 @@
+#!/bin/sh
+
+[[ "$VIRTUAL_ENV" == "" ]]; INVENV=$?
+if [ ! $INVENV ]
+then
+    source .venv/bin/activate
+fi
+echo "Writing pip environment to requirements.txt..."
+pip freeze > requirements.txt
+echo "Done!"
+
+pytest
